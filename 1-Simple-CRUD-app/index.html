@@ -8,10 +8,38 @@
 </head>
 <body>
     <main>
-        <label> Employee Name:</label>
-        <input type="text" id="name-input">
-        <button>Add Name</button>
+        <br>
+        <div>
+            <label> Employee Name:</label>
+            <input type="text" id="name-input">
+            <button id="add-name-btn">Add Name</button>
+        </div>
+        <br>
+        <br>
         
+        <div>
+            <input id="search-input" placeholder="Search By name">
+            <button id="search-btn">Search</button>
+        </div>
+        
+        <br>
+        <br>
+        
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Date Added</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <section hidden id="update-row">
+            <label>Name:</label>
+            <input type="text" id="update-name-input">
+            <button id="update-row-btn">Update</button>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
